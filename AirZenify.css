@@ -44,12 +44,13 @@ Do translate menu
 #browser.linux.address-top .toolbar-mainbar:has(.window-buttongroup.on-mainbar) {
     min-height: calc(38px / var(--uiZoomLevel));
 }
-
+*/
 .density-on .UrlBar-SearchField, 
 .density-on .UrlBar-AddressField {
-    height: 32px;
+    height: 40px;               /* make it 32px if you do not want zen style */
 }
-
+/* Turn it on if you do not want ZEN style*/
+/*
 .disable-titlebar#browser.win .window-buttongroup {
     height: 38px;
 }
@@ -63,7 +64,7 @@ Do translate menu
     background-color: var(--bg);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    margin: 4px;               
+    margin: 0px;               
     border-radius: var(--radius);
 }
 
@@ -104,7 +105,7 @@ Do translate menu
 /* SIDEBAR */
 
 #panels-container {
-    margin-bottom: /*4px*/6px;
+    margin-bottom: /*4px*/ 5px;
     background-color: var(--bg);
     border-radius: var(--radius);
     min-width: 40px;
@@ -132,12 +133,12 @@ Do translate menu
     backdrop-filter: blur(12px) !important;
     -webkit-backdrop-filter: blur(12px) !important;
     border-radius: var(--radius);
-	margin-left: /*4px*/6px;
-	margin-right: /*4px;*/6px;
+	margin-left: /*4px*/5px;
+	margin-right: /*4px;*/5px;
 }
 
-#panels-container.left { margin-left: /*4px*/ 6px; }  
-#panels-container.right { margin-right: /*4px*/ 6px; }  
+#panels-container.left { margin-left: /*4px*/ 5px; }  
+#panels-container.right { margin-right: /*4px*/ 5px; }  
 
 #panels-container #switch { padding-bottom: 5px; min-width: 41px; }
 
@@ -161,7 +162,7 @@ Do translate menu
 }
 
 #panels .webpanel-stack .webpanel .webpanel-content {
-    margin: /*4px*/ 6px;
+    margin: /*4px*/ 5px;
     margin-bottom: 0;
     border-radius: var(--radius);
 }
@@ -346,7 +347,7 @@ footer .toolbar-statusbar {
     background-color: var(--bg);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    /*margin: 4px 4px 0 4px;*/ margin: 6px 6px 0px 6px;
+    /*margin: 4px 4px 0 4px;*/ margin: 5px 5px 0px 5px;
     border-radius: var(--radius);
     height: 30px;
 }
@@ -433,12 +434,14 @@ footer .toolbar-statusbar {
 }
 
 /* Transparent active tab background */
+/*
 .tab.active {
     background-color: var(--bg) !important;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     transition: background-color 0.2s ease;
 }
+*/
 .tab.active::after { background: transparent !important; }
 
 /* BOOKMARK BAR */
@@ -767,7 +770,7 @@ button.button-startpage:after { content: unset; }
 
 /* Bottom tabbar styling */
 #browser.tabs-bottom:not(.transparent-tabbar) #tabs-tabbar-container {
-    /*margin: 0 5px 5px 5px !important;*/ margin: 0 6px 6px 6px; /* adjust spacing for bottom */
+    /*margin: 0 5px 5px 5px !important;*/ margin: 0 5px 5px 5px; /* adjust spacing for bottom */
     border-radius: var(--radius) !important;
 }
 
@@ -787,14 +790,14 @@ button.button-startpage:after { content: unset; }
 
 /* Left side */
 .tabs-left #tabs-tabbar-container {
-    margin-bottom: /*4px*/ 6px !important;
+    margin-bottom: /*4px*/ 7px !important;
 	margin-right: 0px !important;
     margin-top: 0px !important;
 }
 
 /* Right side: use container instead */
 .tabs-right #tabs-tabbar-container {
-    margin-bottom: /*4px*/ 6px !important;
+    margin-bottom: /*4px*/ 7px !important;
 	margin-left: 0px !important;
 	margin-top: 0px !important;
 }
@@ -805,7 +808,7 @@ button.button-startpage:after { content: unset; }
 
 #browser #panels-container.left,
 #browser #panels-container.right {
-    margin-bottom: /*4px*/ 6px !important;
+    margin-bottom: /*4px*/ 5px !important;
 }
 
 /* Collapse header/titlebar completely when tabs are hidden
@@ -833,7 +836,7 @@ button.button-startpage:after { content: unset; }
     backdrop-filter: blur(12px) !important;
     -webkit-backdrop-filter: blur(12px) !important;
     border-radius: var(--radius) !important;
-    margin: /*4px*/ 6px;
+    margin: /*4px*/ 5px;
     height: 28px !important; 
     display: flex;
     align-items: center;
@@ -956,14 +959,14 @@ button.button-startpage:after { content: unset; }
 /* INNER ROUND BORDERS */
 
 #browser:not(.fullscreen) #webpage-stack {
-    /*margin: 0 4px 4px 4px;*/ margin: 0 6px 6px 6px;
+    /*margin: 0 4px 4px 4px;*/ margin: 0 7px 7px 5px;
     border-radius: var(--radius);
     /*
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     background-color: var(--bg);
     */                                      /*Use this for blurred webpage background*/
-    box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, 0.20);
+    box-shadow: inset 0px 0px 4px 4px rgba(0, 0, 0, 0.20);
                                             /*Use this for shadow on the webpage*/
 }
 
@@ -1021,18 +1024,18 @@ display: none !important;
 
 
 .window-buttongroup button {
-    width: 26px !important;    /* প্রতিটা বাটনের প্রস্থ */ 
-    height: 26px !important;   /* প্রতিটা বাটনের উচ্চতা */ 
+    width: 32px !important;    /* প্রতিটা বাটনের প্রস্থ */
+    height: 26px !important;   /* প্রতিটা বাটনের উচ্চতা */
     padding: 0 !important;
-    /*margin: 0 2px !important;*/  /* বাটনের মাঝে gap */ 
-    font-size: 16px !important; /* আইকনের সাইজ */ 
+    /*margin: 0 2px !important;*/  /* বাটনের মাঝে gap */
+    font-size: 16px !important; /* আইকনের সাইজ */
 }
 
 
 /* ZEN HEADER - HIDE HEADER UNTIL HOVER */
 
 #header { 
-    min-height: 9px !important;
+    min-height: 10px !important;
     opacity: 0;
     overflow: hidden;
     transition: height 0.3s ease, opacity 0.3s ease;
@@ -1048,8 +1051,8 @@ display: none !important;
   pointer-events: none !important;
 }
 
+/*
 button.vivaldi {
-    display: none !important;  
+    display: none !important;
 }
-
-
+*/
