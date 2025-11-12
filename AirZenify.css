@@ -253,7 +253,7 @@ footer .toolbar-statusbar {
     border-radius: var(--radius) !important;
     padding-bottom: 5px !important;
     background-color: var(--bg);
-    margin: 0 0 4px 6px !important;
+    margin: 0 5px 4px 5px !important;
     border: none !important;
 }
 
@@ -1035,7 +1035,7 @@ display: none !important;
 /* ZEN HEADER - HIDE HEADER UNTIL HOVER */
 
 #header { 
-    min-height: 10px !important;
+    min-height: 9px !important;
     opacity: 0;
     overflow: hidden;
     transition: height 0.3s ease, opacity 0.3s ease;
