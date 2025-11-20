@@ -243,7 +243,7 @@ footer .toolbar-statusbar {
     -webkit-backdrop-filter: blur(12px);
     background-color: var(--bg);
     border-radius: var(--radius);
-    /*margin: 0 4px 4px 4px;*/ margin: 0 6px 6px 6px;
+    /*margin: 0 4px 4px 4px;*/ margin: 0 5px 5px 5px;
 }
 
 .inner > .StatusInfo > .StatusInfo-Content {
@@ -959,7 +959,7 @@ button.button-startpage:after { content: unset; }
 /* INNER ROUND BORDERS */
 
 #browser:not(.fullscreen) #webpage-stack {
-    /*margin: 0 4px 4px 4px;*/ margin: 0 7px 7px 5px;
+    /*margin: 0 4px 4px 4px;*/ margin: 0 6px 7px 5px;
     border-radius: var(--radius);
     /*
     backdrop-filter: blur(12px);
@@ -1020,22 +1020,22 @@ display: none !important;
 
 .window-buttongroup {
     height: 26px !important;
- }  /* মোট height */   
+ }  /* Total height */   
 
 
 .window-buttongroup button {
-    width: 32px !important;    /* প্রতিটা বাটনের প্রস্থ */
-    height: 26px !important;   /* প্রতিটা বাটনের উচ্চতা */
+    width: 32px !important;    /* Each Button Width */
+    height: 26px !important;   /* Each Button Height */
     padding: 0 !important;
-    /*margin: 0 2px !important;*/  /* বাটনের মাঝে gap */
-    font-size: 16px !important; /* আইকনের সাইজ */
+    /*margin: 0 2px !important;*/  /* Gap between buttons */
+    font-size: 16px !important; /* Icon Size */
 }
 
 
 /* ZEN HEADER - HIDE HEADER UNTIL HOVER */
 
 #header { 
-    min-height: 9px !important;
+    min-height: 8px !important;
     opacity: 0;
     overflow: hidden;
     transition: height 0.3s ease, opacity 0.3s ease;
