@@ -13,10 +13,9 @@ CSS code taken from [Vivaldi-Air](https://github.com/MohamedxSalah/Vivaldi-Air) 
 5. Open any code editor like Notepad or VSCode then paste the copied code and save it with .css extension at last of it's name (for me autohide.css) in a seperate folder (for me the folder name is Vivaldi_script)
 6. Open Vivaldi and type vivaldi:settings/appearance/ in address bar and see for Custom UI Modification or simply just open settings and search for Custom UI Modification in settings search bar
 7. Select the folder where the .css file located or paste the directory of the folder in bar (for me it's D:\Vivaldi_Script )
-8. Restart browser. Fix width , delay , transitions etc. according to your need.
+8. Restart browser. Fix width , delay , transitions etc. according to your need in the CSS file.
 
 ⚙️ Settings
-1. Hide Address bar by unchecking "Show Address Bar"
-2. Settings-> Appearance-> Menu-> Menu Position-> Vivaldi Button ( If you want a customizable menu button , make one with command chain)
+1. Uncheck Show Title Bar in the settings. Don't worry Window Button Group will appear on hover at top right corner. Vivaldi Menu Button will appear on hover at top left side.
+2. Hide Address bar by unchecking "Show Address Bar"
 3. If You want Transparent Tab Bar , Tick Transparent Tab Bar in Theme Settings and set Blur = 0
-4. Window Button Group will appear on hover at top right corner.
